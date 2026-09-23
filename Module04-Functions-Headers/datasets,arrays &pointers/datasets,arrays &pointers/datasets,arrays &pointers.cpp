@@ -1,4 +1,20 @@
-﻿#include <iostream>
+/*
+Assignment: Kaggle Dataset Arrays and Pointers
+Dataset Source:
+Kaggle Titanic Dataset
+https://www.kaggle.com/code/chanchal24/titanic-dataset
+Selected Fields:
+Name
+Age
+Fare
+Selected Records:
+Braund
+Cumings
+Heikkinen
+Futrelle
+Allen
+*/
+#include <iostream>
 using namespace std;
 int main()
 	{
