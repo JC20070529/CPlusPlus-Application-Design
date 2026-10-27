@@ -1,13 +1,29 @@
-#include<iostream>
-#include"recordtools.h"
+#include <iostream>
+#include "recordtools.h"
+
 using namespace std;
-void showmenu()
+
+// Global variables to store one record
+string studentName;
+double score;
+
+void addRecord()
 {
-	cout << "1. add student" << endl;
-	cout << "2.view student" << endl;
-	cout << "3.exit" << endl;
+    cout << "Enter student name: ";
+    cin >> studentName;
+
+    cout << "Enter score: ";
+    cin >> score;
 }
 
-	void showmessage() {
-		cout << "record system ready" << endl;
+void displayRecord()
+{
+    cout << "\nStudent Record" << endl;
+    cout << "Name: " << studentName << endl;
+    cout << "Score: " << score << endl;
+}
+
+double calculateResult()
+{
+    return score;
 }

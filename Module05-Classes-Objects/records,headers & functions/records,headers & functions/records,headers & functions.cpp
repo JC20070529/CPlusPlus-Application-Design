@@ -1,11 +1,18 @@
 ﻿#include <iostream>
 #include "recordtools.h"
 
+using namespace std;
+
 int main()
 {
-	showmessage();
-	showmenu();
-	
-	return 0;
+    addRecord();
+
+    displayRecord();
+
+    cout << "Calculated Result: "
+        << calculateResult() << endl;
+
+    return 0;
 }
+
 
