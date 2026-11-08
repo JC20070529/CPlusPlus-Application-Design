@@ -1,1 +1,30 @@
-
+Module 9 - AI Feature Proposal
+AI Feature
+One AI-powered feature for this application would be a Student Performance Analyzer.
+The AI system would analyze student scores and identify students who may need additional academic support.
+Data Needed
+Student ID
+Student Name
+Student Score
+Historical grade records
+What the User Would See
+After entering student scores, the user could receive recommendations such as:
+Student: John Smith
+Score: 58
+AI Recommendation: This student may be at risk of failing and may benefit from tutoring or additional study support.
+Application Architecture
+User Input
+↓
+Student Grade Tracker
+↓
+AI Analysis Module
+↓
+Performance Recommendation
+↓
+Display Results to User
+Prototype Version
+If a live AI service is unavailable, the application could simulate AI recommendations using score ranges:
+90–100: Excellent Performance
+70–89: Satisfactory Performance
+Below 70: Additional Support Recommended
+This prototype demonstrates how AI could be integrated into the application in the future.
