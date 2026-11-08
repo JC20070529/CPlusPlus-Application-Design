@@ -1,1 +1,16 @@
+Student Grade Tracker
+A C++ application for managing student records and grades. Users can add students, display records, search by ID, save data to a file, and load data from a file.
 
+Input validation was added to improve data accuracy and prevent invalid entries.
+Validation features include:
+1.Student IDs must be positive numbers.
+2.Student scores must be between 0 and 100.
+3.Menu selections must be between 1 and 6.
+4.Invalid input displays an error message.
+5.Users are allowed to try again until valid input is entered.
+Examples:
+1.Negative IDs are rejected.
+2.Scores below 0 or above 100 are rejected.
+3.Non-numeric input is rejected.
+4.Invalid menu choices are rejected.
+5.These validation checks help prevent errors and improve the reliability of the application.
