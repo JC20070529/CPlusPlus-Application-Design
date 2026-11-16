@@ -1,1 +1,15 @@
-
+AI System Using C++
+One AI system that uses C++ is TensorFlow. TensorFlow is a machine learning framework developed by Google. C++ is used because it provides high performance, efficient memory management, and fast execution for machine learning operations.
+What C++ Contributes
+C++ helps TensorFlow perform mathematical computations quickly and efficiently. It allows AI applications to process large amounts of data while maintaining good performance.
+How C++ Benefits My Application
+My application is a Student Grade Tracker that stores, searches, and manages student records.
+As the application grows, C++ would become valuable because it offers:
+Fast data processing
+Efficient memory usage
+Quick searching through large datasets
+Faster file operations
+Better scalability for managing thousands of student records
+The binary search function used in my application is an example of a performance-focused feature because it can locate student records much faster than a linear search when the dataset becomes large.
+Performance Feature
+A performance-focused feature in this project is the binary search algorithm implemented in the searchStudent() function. Since student records are sorted by ID, binary search reduces the number of comparisons needed and improves search efficiency.
