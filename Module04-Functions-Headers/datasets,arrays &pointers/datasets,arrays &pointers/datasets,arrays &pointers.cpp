@@ -15,41 +15,59 @@ Futrelle
 Allen
 */
 #include <iostream>
+#include <fstream>
+#include <string>
+
 using namespace std;
+
 int main()
-	{
-string names[5] ={
-		"Braund",
-		"Cumings",
-	    "Heikkinen",
-		"Futrelle",
-		"Allen"
-		};
-int ages[5] =
-		{
-		22,
-		38,
-		26,
-		35,
-		35
-		};
-double fares[5] =
-		{
-		7.25,
-		71.2833,
-		7.925,
-		53.10,
-		8.05
-		};
+{
+    string names[5];
+    int ages[5];
+    double fares[5];
 
-double* farePtr = &fares[0];
+    ifstream file("titanic.csv");
 
-			cout << "Titanic Dataset Records" << endl;
-			for (int i = 0; i < 5; i++)
-			{
-			cout << names[i]<< ", Age: " << ages[i]<< ", Fare: $" << fares[i]<< endl;
-			}
-			cout << endl;
-			cout << "First fare through pointer: "<< *farePtr << endl;
-			return 0;
+    if (!file)
+    {
+        cout << "File not found!" << endl;
+        return 1;
+    }
+
+    string header;
+    getline(file, header); // Skip header row
+
+    char comma;
+
+    for (int i = 0; i < 5; i++)
+    {
+        getline(file, names[i], ',');
+        file >> ages[i];
+        file >> comma;
+        file >> fares[i];
+
+        file.ignore(1000, '\n');
+    }
+
+    file.close();
+
+    cout << "Titanic Dataset Records" << endl;
+    cout << "-----------------------" << endl;
+
+    for (int i = 0; i < 5; i++)
+    {
+        cout << names[i]
+             << ", Age: " << ages[i]
+             << ", Fare: $" << fares[i]
+             << endl;
+    }
+
+    double* farePtr = &fares[0];
+
+    cout << endl;
+    cout << "First fare through pointer: "
+         << *farePtr
+         << endl;
+
+    return 0;
 }
