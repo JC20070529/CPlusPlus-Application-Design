@@ -1,1 +1,17 @@
-
+Student Grade Tracker
+Description
+A C++ application for managing student grade records.
+Features：
+1.Add student
+2.Display students
+3.Search student by ID
+4.Save data to file
+5.Load data from file
+Course Topics Used：
+1.Classes and Objects
+2.Arrays
+3.Functions
+4.File I/O
+5.Pointers
+6.Sorting
+7.Binary Search
